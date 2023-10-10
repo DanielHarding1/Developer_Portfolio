@@ -45,8 +45,9 @@ p {
   align-content: space-between;
   text-decoration: none;
   color: white;
-  
 }
+  
+
 
 .header div ul li {
   display: inline-block;
@@ -73,6 +74,15 @@ p {
   width: 100%;
   margin-bottom: 40px;
   background-color: white;
-  background-size: cover;
+  background-image: url("../images/css.png") url("../images/html.png") url("../images/javascript-logo.webp");
+  background-size: 33% 33% 34%;
   background-position: center;
+}
+
+#aboutme{
+  height: 75px;
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background-color: white;
 }
