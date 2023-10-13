@@ -8,7 +8,7 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
   text-align: start;
-  background-color: #E9F1FA
+  background-color: white
 }
 
 h1 {
@@ -30,59 +30,81 @@ p {
 }
 
 .header{
-  display: flex;
   text-align: center;
   padding: 20px;
   padding-top: 15px;
   margin-right: 20px;
-  font-size: 20px
-}
-
-
-
-.header div ul {
-  list-style-type: none;
-  align-content: space-between;
-  text-decoration: none;
-  color: white;
-}
+  font-size: 20px;
+  background-image: url("../images/banner-6617550_960_720.png");
+  height: 300px;
+  width: 100%;
   
+}
+
+.container ul{
+  text-decoration-style: none ;
+}
 
 
-.header div ul li {
+
+.navbar ul li {
   display: inline-block;
   margin-left: 25px;
   
 }
 
-#about
 
-#navigation {
-  text-align:right;
-  justify-content: flex-start;
-  
-  
-  
+#aboutcontent{
+  height: 300px;
+  padding-bottom: 200px;
 }
 
-#navbar {
-  text-align: center;
+
+#content {
+  margin: 0px 5%;
+  display: grid;
+  min-height: 200px;
+  height: 70vh;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 33% 33% 34%;
+  grid-template-areas: 
+  "aboutme aboutcontent"
+  "projects projectscontent"
+  "contact contactcontent"
+  ;
 }
 
-.hero {
-  height: 500px;
-  width: 100%;
-  margin-bottom: 40px;
-  background-color: white;
-  background-image: url("../images/css.png") url("../images/html.png") url("../images/javascript-logo.webp");
-  background-size: 33% 33% 34%;
+#projectscontent {
+  margin: 0px 5%;
+  height: 400px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 25% 25% 25% 25%;
+  grid-template-areas: 
+  "weatherapp weatherapp"
+  "caculator music"
+  "caculator music"
+  "caculator music"
+  ;
+}
+
+#weatherapp {
+  grid-area: weatherapp;
+  background-image: url("../images/weastherapp.jpg");
+}
+
+#caculator {
+  grid-area: caculator;
+  background-image: url("../images/Calculator.gif");
+}
+
+
+.catagoryGridArea2 {
   background-position: center;
-}
-
-#aboutme{
-  height: 75px;
-  width: 100%;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  background-color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
 }
