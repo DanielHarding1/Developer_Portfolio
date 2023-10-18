@@ -38,6 +38,7 @@ p {
   background-image: url("../images/banner-6617550_960_720.png");
   height: 300px;
   width: 100%;
+  justify-content: space-between;
 }
 
 .container ul {
@@ -90,6 +91,7 @@ p {
   height: 100%;
   grid-area: weatherapp;
   background-image: url("../images/weatherapp.jpg");
+  padding: 50px;
 }
 
 #caculator {
@@ -97,6 +99,7 @@ p {
   height: 100%;
   grid-area: caculator;
   background-image: url("../images/Calculator.gif");
+  padding: 50px;
 }
 
 #music {
@@ -104,6 +107,7 @@ p {
   height: 100%;
   grid-area: music;
   background-image: url("../images/musicplayer.png");
+  padding: 50px;
 }
 
 .categoryGridArea2 {
